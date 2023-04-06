@@ -7,20 +7,20 @@
 
 # !use my_list.count()
 
-my_list = ['n','s','n','s','n','s','n','s','n','s']
+my_list = ['n','s','n','s','n','s','n','s','s','s']
 
-n, w = 0, 0
+#n, w = 0, 0
 
-for d in my_list:
-    match d:
-        case 'n':
-            n += 1
-        case 's':
-            n -= 1
-        case 'w':
-            w += 1
-        case 'e':
-            w -= 1
+#for d in my_list:
+    #match d:
+        #case 'n':
+            #n += 1
+        #case 's':
+            #n -= 1
+        #case 'w':
+            #w += 1
+        #case 'e':
+            #w -= 1
 
-print(n == 0 and w == 0 and len(my_list) == 10)
+print(my_list.count('n') == my_list.count('s') and my_list.count('w') == my_list.count('e') and len(my_list) == 10)
         
